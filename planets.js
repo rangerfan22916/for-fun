@@ -1,0 +1,68 @@
+// planets.js — Solar system data
+
+const PLANETS = [
+  {
+    id: 'mercury', name: 'MERCURY', type: 'ROCKY PLANET',
+    c1: '#b8a898', c2: '#8a7060', c3: '#504030', atm: null,
+    tagline: 'Closest to the Sun — extreme worlds',
+    desc: 'Mercury is the smallest planet and nearest to the Sun. With no atmosphere to retain heat, temperatures swing violently — scorching days and freezing nights. Its oversized iron core creates a weak magnetic field.',
+    facts: [['Diameter','4,880 km'],['Day length','59 Earth days'],['Year length','88 Earth days'],['Moons','0']],
+    fun: ['Surface hits 430°C during the day','Drops to −180°C at night','Core makes up 85% of its radius','MESSENGER orbited it 2011–2015'],
+  },
+  {
+    id: 'venus', name: 'VENUS', type: 'ROCKY PLANET',
+    c1: '#f0e080', c2: '#c8a030', c3: '#8a5010', atm: '#f0d06088',
+    tagline: 'Hottest planet — runaway greenhouse',
+    desc: "Venus is hotter than Mercury despite being farther from the Sun. Its thick CO₂ atmosphere traps heat in a runaway greenhouse effect, keeping temperatures at a constant 465°C. Atmospheric pressure is 92× Earth's — enough to crush a submarine.",
+    facts: [['Diameter','12,104 km'],['Day length','243 Earth days'],['Year length','225 Earth days'],['Moons','0']],
+    fun: ['A day on Venus is longer than its year','Rotates backwards relative to most planets','Venera probes survived only ~2 hours on surface','Surface pressure crushes steel'],
+  },
+  {
+    id: 'earth', name: 'EARTH', type: 'HOME PLANET',
+    c1: '#2a70e0', c2: '#1a4a90', c3: '#0c2850', atm: '#4488ff44',
+    tagline: 'The blue marble — only known life',
+    desc: 'Our extraordinary home. A magnetic field, liquid water oceans, plate tectonics, and a finely tuned atmosphere make Earth the only confirmed harbor of life in the universe. From orbit it shines brilliant sapphire blue wrapped in swirling white clouds.',
+    facts: [['Diameter','12,742 km'],['Day length','24 hours'],['Year length','365.25 days'],['Moons','1 — Luna']],
+    fun: ['71% of the surface is liquid water','Magnetic field shields us from solar wind','Plate tectonics constantly reshape continents','Hosts an estimated 8.7 million species'],
+  },
+  {
+    id: 'mars', name: 'MARS', type: 'ROCKY PLANET',
+    c1: '#dd5530', c2: '#993318', c3: '#551505', atm: '#cc441122',
+    tagline: "The red planet — humanity's next step",
+    desc: "Mars is the most explored world beyond Earth and humanity's most likely next home. Red iron-oxide dust coats the surface. Ancient river valleys and polar ice caps hint at a watery past. Olympus Mons — the solar system's tallest volcano — rises 22 km.",
+    facts: [['Diameter','6,779 km'],['Day length','24h 37m'],['Year length','687 Earth days'],['Moons','Phobos & Deimos']],
+    fun: ['Olympus Mons is 3× taller than Everest','Dust storms can engulf the entire planet','Had liquid oceans billions of years ago','Perseverance rover is active there right now'],
+  },
+  {
+    id: 'jupiter', name: 'JUPITER', type: 'GAS GIANT',
+    c1: '#d09050', c2: '#a06828', c3: '#704018', atm: null,
+    tagline: 'Largest planet — a mini solar system',
+    desc: 'Jupiter contains more mass than all other planets combined — twice over. Its Great Red Spot is an anticyclonic storm larger than Earth that has persisted for centuries. With 95 known moons, Jupiter is almost a solar system unto itself.',
+    facts: [['Diameter','139,820 km'],['Day length','9h 56m'],['Year length','11.9 Earth years'],['Moons','95 known']],
+    fun: ['Great Red Spot storm raging 350+ years','Io has 400+ active volcanoes','Europa may have a subsurface liquid ocean','Acts as a cosmic shield deflecting asteroids'],
+  },
+  {
+    id: 'saturn', name: 'SATURN', type: 'GAS GIANT',
+    c1: '#f0e090', c2: '#c8a040', c3: '#907020', atm: null, rings: true,
+    tagline: 'Lord of the rings',
+    desc: "Saturn's iconic ring system spans 282,000 km but averages just 10 meters thick — made of billions of ice and rock particles. Saturn is the least dense planet in the solar system: its average density is lower than water.",
+    facts: [['Diameter','116,460 km'],['Day length','10h 42m'],['Year length','29.4 Earth years'],['Moons','145 known']],
+    fun: ["Would float on water — density 0.69 g/cm³",'Hexagonal storm at the north pole','Titan has lakes of liquid methane','Cassini orbited Saturn for 13 years'],
+  },
+  {
+    id: 'uranus', name: 'URANUS', type: 'ICE GIANT',
+    c1: '#70d8e8', c2: '#3098b0', c3: '#106878', atm: '#88dde833', rings: true, ringColor: 'rgba(160,220,230,0.35)',
+    tagline: "Rolls around the Sun on its side",
+    desc: "Uranus is tipped 98° on its rotational axis — it essentially rolls around the Sun on its side. Methane in its hydrogen-helium atmosphere absorbs red light, giving it an eerie blue-green hue. It is the coldest planetary atmosphere in the solar system.",
+    facts: [['Diameter','50,724 km'],['Day length','17h 14m'],['Year length','84 Earth years'],['Moons','28 known']],
+    fun: ['Rotates on its side — tilted 98°','Coldest atmosphere: −224°C','Rings discovered only in 1977','Has 13 known narrow rings'],
+  },
+  {
+    id: 'neptune', name: 'NEPTUNE', type: 'ICE GIANT',
+    c1: '#2050e0', c2: '#1030a0', c3: '#081870', atm: '#3060ff33',
+    tagline: 'Supersonic winds — 2,100 km/h',
+    desc: 'Neptune is the farthest planet and the windiest world in the solar system, with storm winds reaching 2,100 km/h. Its deep cobalt blue comes from methane absorption. Triton, its largest moon, orbits backwards and is slowly spiraling to its doom.',
+    facts: [['Diameter','49,244 km'],['Day length','16h 6m'],['Year length','165 Earth years'],['Moons','16 known']],
+    fun: ['Fastest winds in the solar system: 2,100 km/h','Triton orbits in reverse — and is falling inward','Takes 165 years to orbit the Sun once','Only one spacecraft has visited — Voyager 2 in 1989'],
+  },
+];
